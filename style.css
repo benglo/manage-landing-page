@@ -104,11 +104,11 @@ svg {
 /*Utility classes*/
 
 .text-primary-400 {
-  color: var(--clr-accent-400);
+  color: var(--clr-primary-400);
 }
 
 .text-primary-900 {
-  color: var(--clr-accent-900);
+  color: var(--clr-primary-900);
 }
 
 .text-accent-400 {
@@ -128,11 +128,11 @@ svg {
 }
 
 .bg-primary-400 {
-  background-color: var(--clr-accent-400);
+  background-color: var(--clr-primary-400);
 }
 
 .bg-primary-900 {
-  background-color: var(--clr-accent-900);
+  background-color: var(--clr-primary-900);
 }
 
 .bg-accent-400 {
@@ -176,4 +176,20 @@ svg {
 }
 .fs-400 {
   font-size: var(--fs-400);
+}
+
+.container {
+  --max-width: 1110px;
+  --padding: 1rem;
+
+  width: min(var(--max-width), 100% - (var(--padding) * 2));
+  margin-inline: auto;
+}
+
+/*General Styling*/
+
+body {
+  font-size: var(--fs-body);
+  font-family: var(--ff-body);
+  color: var(--clr-primary-400);
 }
